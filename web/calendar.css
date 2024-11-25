@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* 하얀색으로 변경 */
+    background-color: #f9f9f9;
     color: #333;
 }
 
@@ -11,33 +11,38 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ffffff; /* 헤더 배경도 하얀색으로 유지 */
+    background-color: #ffffff;
     border-bottom: 2px solid #ddd;
 }
 
-
 header h1 {
     font-size: 24px;
-    margin: 0;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
+    color: #003366;
 }
 
 nav a {
+    margin: 0 10px;
     text-decoration: none;
-    color: #007bff;
+    color: #003366;
 }
 
-#login {
-    background-color: #007bff;
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #003366;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5px 10px;
     cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 main {

@@ -13,13 +13,28 @@
         <h1>Festival Calendar</h1>
         <nav>
             <a href="#">월별 축제</a>
-            <a href="#">내 계정</a>
-            <button id="login">로그인</button>
+            <a href="account-info.html" class="active">내 계정</a>
+            <button id="loginButton">로그인</button>
         </nav>
     </header>
     <main>
         <section class="calendar">
-            <h2>2024.11</h2>
+            <h2 id="calendarTitle">2024.11</h2>
+            <label for="monthSelect">달 선택: </label>
+            <select id="monthSelect">
+                <option value="0">1월</option>
+                <option value="1">2월</option>
+                <option value="2">3월</option>
+                <option value="3">4월</option>
+                <option value="4">5월</option>
+                <option value="5">6월</option>
+                <option value="6">7월</option>
+                <option value="7">8월</option>
+                <option value="8">9월</option>
+                <option value="9">10월</option>
+                <option value="10" selected>11월</option>
+                <option value="11">12월</option>
+            </select>
             <table>
                 <thead>
                     <tr>
@@ -32,56 +47,13 @@
                         <th>토</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="sunday"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>1</td>
-                        <td class="saturday">2</td>
-                    </tr>
-                    <tr>
-                        <td class="sunday">3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td class="saturday">9</td>
-                    </tr>
-                    <tr>
-                        <td class="sunday">10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td class="saturday">16</td>
-                    </tr>
-                    <tr>
-                        <td class="sunday">17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td class="saturday">23</td>
-                    </tr>
-                    <tr>
-                        <td class="sunday">24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td></td>
-                    </tr>
+                <tbody id="calendarBody">
+                    <!-- 날짜가 동적으로 생성됩니다 -->
                 </tbody>
             </table>
         </section>
     </main>
+    <script src="calendar.js"></script>
 </body>
 
 </html>
