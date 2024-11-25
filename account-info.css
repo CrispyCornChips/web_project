@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #003366;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #003366;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+main {
+    padding: 20px;
+}
+
+.account-info {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-info h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #003366;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    width: 20%;
+}
+
+td input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    margin: 0 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Calendar - 내 계정</title>
+    <link rel="stylesheet" href="account-info.css">
+</head>
+
+<body>
+    <header>
+        <h1>Festival Calendar</h1>
+        <nav>
+            <a href="#">월별 축제</a>
+            <a href="#" class="active">내 계정</a>
+            <button id="loginButton">로그인</button>
+        </nav>
+    </header>
+    <main>
+        <section class="account-info">
+            <h2>정보</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <td><input type="text" id="userId" value="exampleID" disabled></td>
+                </tr>
+                <tr>
+                    <th>PW</th>
+                    <td><input type="password" id="userPw" value="password123"></td>
+                </tr>
+                <tr>
+                    <th>E-Mail</th>
+                    <td><input type="email" id="userEmail" value="example@email.com"></td>
+                </tr>
+                <tr>
+                    <th>NAME</th>
+                    <td><input type="text" id="userName" value="홍길동"></td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button id="editButton">수정</button>
+                <button id="saveButton" disabled>저장</button>
+            </div>
+        </section>
+    </main>
+    <script src="account-info.js"></script>
+</body>
+
+</html>
