@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>축제 상세페이지</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8e9; /* 배경색 */
+    }
+
+    header {
+      text-align: left;
+      padding: 20px;
+      background-color: white;
+      font-size: 24px;
+      font-weight: bold;
+      color: #3366cc; /* 제목 색상 */
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 하단 그림자 */
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      margin-right: 20px;
+    }
+
+    nav button {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #0056b3;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 20px;
+      gap: 20px; /* 섹션 간 간격 */
+    }
+
+    .poster, .description, .photo {
+      border: 2px solid black;
+      background-color: white;
+      box-sizing: border-box;
+    }
+
+    .poster {
+      width: 30%;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .description {
+      width: 35%;
+      padding: 20px;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .description h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .description p {
+      margin: 10px 0;
+    }
+
+    .photo {
+      width: 30%;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    /* 추가적인 스타일링 */
+    .description div {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header>Festival Calendar</header>
+  <nav>
+    <div>
+      <a href="#">월별 축제</a>
+      <a href="#">내 계정</a>
+    </div>
+    <button>로그인</button>
+  </nav>
+  <div class="container">
+    <div class="poster">축제 포스터</div>
+    <div class="description">
+      <h2>축제 이름</h2>
+      <p><strong>축제 기간:</strong> 여기에 기간 입력</p>
+      <div>
+        <p><strong>축제 설명:</strong> 여기에 설명 입력</p>
+        <p><strong>축제 장소:</strong> 여기에 장소 입력</p>
+        <p><strong>참가 비용:</strong> 여기에 비용 입력</p>
+        <p><strong>축제 개최 기관:</strong> 여기에 기관 입력</p>
+        <p><strong>연락처:</strong> 여기에 연락처 입력</p>
+        <p><strong>SNS:</strong> 여기에 SNS 정보 입력</p>
+      </div>
+    </div>
+    <div class="photo">축제 사진</div>
+  </div>
+</body>
+</html>

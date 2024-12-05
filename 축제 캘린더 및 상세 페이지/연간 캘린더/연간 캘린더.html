@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Calendar</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-sizing: border-box;
+        }
+        header h1 {
+            font-size: 1.8em;
+            font-weight: normal;
+            color: #1a237e;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .login-button {
+            background-color: #1a237e;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .calendar {
+            text-align: center;
+            margin: 100px 0;
+        }
+        .calendar .year-navigation {
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        .calendar .year {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+        .calendar .past-year, .calendar .next-year {
+            color: #d3d3d3;
+        }
+        .calendar .months {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .calendar .months a {
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: black;
+        }
+        @media (max-width: 768px) {
+            .calendar .months {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .calendar .months {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Festival Calendar</h1>
+        <nav>
+            <a href="#">월별 축제</a>
+            <a href="#">내 계정</a>
+            <button class="login-button">로그인</button>
+        </nav>
+    </header>
+    <main class="calendar">
+        <div class="year-navigation">
+            <span class="past-year">2023</span>
+            <span class="year">2024</span>
+            <span class="next-year">2025</span>
+        </div>
+        <div class="months">
+            <a href="#">JAN</a>
+            <a href="#">FEB</a>
+            <a href="#">MAR</a>
+            <a href="#">APR</a>
+            <a href="#">MAY</a>
+            <a href="#">JUN</a>
+            <a href="#">JUL</a>
+            <a href="#">AUG</a>
+            <a href="#">SEP</a>
+            <a href="#">OCT</a>
+            <a href="#">NOV</a>
+            <a href="#">DEC</a>
+        </div>
+    </main>
+</body>
+</html>

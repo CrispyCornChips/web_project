@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이달의 축제</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .login-btn {
+            padding: 8px 16px;
+            border: 1px solid #0046d5;
+            background-color: #0046d5;
+            color: white;
+            font-size: 14px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .login-btn:hover {
+            background-color: #003bb3;
+        }
+        .content {
+            text-align: center;
+            margin: 40px 20px;
+        }
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .festivals {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .view-all {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .view-all:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Festival calendar</h2>
+        <nav class="menu">
+            <a href="#">월별 축제</a>
+            <a href="#">내 계정</a>
+            <a href="#" class="login-btn">로그인</a>
+        </nav>
+    </header>
+    <main class="content">
+        <h1>이달의 축제</h1>
+        <div class="festivals">
+            <div>축제1</div>
+            <div>축제2</div>
+            <div>축제3</div>
+        </div>
+        <button class="view-all">이달의 축제 전체 보기</button>
+    </main>
+</body>
+</html>
